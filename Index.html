@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to ThriftFashion</title>
+    <link rel="stylesheet" href="Welcome.css">
+</head>
+<body>
+    <div class="welcome">
+        <h1>Welcome</h1>
+    </div>
+    <div class="welcome"><h1>We would like to have some information about you</h1></div>
+    <form class="input" action="./Pages/Index.html">
+        <h1>Enter your name</h1>
+        <br>
+        <input type="text" placeholder="Type here" id="myInput">
+        <br>
+        <input type="submit" onclick="send()">
+    </form>
+    
+
+    <script>
+        function send(){
+    let send = document.getElementById('myInput').value
+    localStorage.setItem("name",send)
+}
+    </script>
+</body>
+
+</html>

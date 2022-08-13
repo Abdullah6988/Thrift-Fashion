@@ -1,0 +1,389 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>ThriftFashion - Product</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" >
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+    <section class="header">
+        <nav class="nav">
+            <div class="logo" onclick="home()">
+                <img src="../images/logo_200x200 (1).png" alt="">
+                <h1>Thrift - <span>Fashion</span></h1>
+            </div>
+            <div class="links" id="links" >
+                <a href="./Index.html">Home</a>
+                <a href="product.html" class="active">products</a>
+                <a href="./Index.html#about-wrapper">about us</a>
+                <a href="./Index.html#contact">contact us</a>
+                <a href="./Index.html#Feedback">Feedback</a>
+                <a href="#checkout" onclick="check()">checkout</a>
+            </div>
+            <div class="crumb">
+                <button class="bread" onclick="link()"><i class="fa-solid fa-bars" id="menu"></i></button>
+                <button class="close" onclick="active()"><i class="fa-solid fa-xmark" id="times"></i></button>
+            </div>
+        </nav>
+    </section>
+    <div class="heading">
+        <div class="img">
+            <img src="../images/2489629.webp" alt="">
+        </div>
+        <div class="content">
+            <h1>Products</h1>
+            <h3>Find your desired products here with cheap price</h3>
+        </div>
+    </div>
+    <div class="hr"></div>
+    <div class="head" data-aos="fade-up">
+        <h1>Popular Products</h1>
+    </div>
+    <br>
+    <div class="input">
+
+        <input type="text" id="myInput" placeholder="Seacrh here">
+    </div>
+
+    
+    <div class="main" style="margin: 0;">
+            <div class="col-lg">
+                <div class="row" data-aos="fade-up">
+                    <div class="img">
+                        <img src="../images/pr1.jpg" alt="" >
+                    </div>
+                    <div class="content">
+                        <h2>men fashion</h2>
+                        <button id="add1">Add to Cart</button>
+                        <a href="./partproduct.html">Description</a>
+                    </div>
+                </div>
+                <div class="row" data-aos="fade-up">
+                    <div class="img">
+                        <img src="../images/accd.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>men fashion</h2>
+                        <button id="add2">Add to Cart</button>
+                        <a href="./partproduct.html">Description</a>
+                    </div>
+                </div>
+                <div class="row" data-aos="fade-up">
+                    <div class="img">
+                        <img src="../images/card2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>men fashion</h2>
+                        <button id="add3">Add to Cart</button><a href="./partproduct.html">Description</a>
+                    </div>
+                </div>
+    
+    
+            </div>
+            <div class="col-lg">
+                <div class="row" data-aos="fade-up">
+                    <div class="img">
+                        <img src="../images/abcde.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>women fashion</h2>
+                        <button id="add4">Add to Cart</button><a href="./partproduct.html">Description</a>
+                    </div>
+                </div>
+                <div class="row" data-aos="fade-up">
+                    <div class="img">
+                        <img src="../images/xyz.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>kids</h2> fashion</h2>
+                        <button id="add5">Add to Cart</button><a href="./partproduct.html">Description</a>
+                    </div>
+                </div>
+                <div class="row" data-aos="fade-up">
+                    <div class="img">
+                        <img src="../images/pr3.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>kids</h2> fashion</h2>
+                        <button id="add6">Add to Cart</button><a href="./partproduct.html">Description</a>
+                    </div>
+                </div>
+                <div class="row" data-aos="fade-up">
+                    <div class="img">
+                        <img src="../images/card1.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>women fashion</h2>
+                        <button id="add7">Add to Cart</button><a href="./partproduct.html">Description</a>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="col-lg">
+                <div class="row" data-aos="fade-up">
+                    <div class="img">
+                        <img src="../images/asa.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>old fashion</h2>
+                        <button id="add8">Add to Cart</button><a href="./partproduct.html">Description</a>
+                    </div>
+                </div>
+                <div class="row" data-aos="fade-up">
+                    <div class="img">
+                        <img src="../images/pr4.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>old fashion</h2>
+                        <button id="add9">Add to Cart</button><a href="./partproduct.html">Description</a>
+                    </div>
+                </div>
+                <div class="row" data-aos="fade-up">
+                    <div class="img">
+                        <img src="../images/aaa.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>old fashion</h2>
+                        <button id="add10">Add to Cart</button><a href="./partproduct.html">Description</a>
+                    </div>
+                </div>
+    
+            </div>
+    </div>
+    <div class="container" id="contain">
+        
+        <form action="">
+    
+            <div class="row">
+    
+                <div class="col">
+    
+                    <h class="title">billing address</h>
+    
+                    <div class="inputBox">
+                        <span>full name :</span>
+                        <input type="text" placeholder="name">
+                    </div>
+                    <div class="inputBox">
+                        <span>email :</span>
+                        <input type="email" placeholder="example@example.com">
+                    </div>
+                    <div class="inputBox">
+                        <span>address :</span>
+                        <input type="text" placeholder="room - street - locality" >
+                    </div>
+                    <div class="inputBox">
+                        <span>city :</span>
+                        <input type="text" placeholder="city" >
+                    </div>
+    
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>state :</span>
+                            <input type="text" placeholder="state" >
+                        </div>
+                        <div class="inputBox">
+                            <span>zip code :</span>
+                            <input type="text" placeholder="123 456" >
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="col">
+                    <div class="cross">
+                        <button id="cross" onclick="cros()"><i class="fa-solid fa-xmark" id="times"></i></button>
+                    </div>
+                    <h3 class="title">payment</h3>
+    
+                    <div class="inputBox">
+                        <span>cards accepted :</span>
+                        <img src="images/card_img.png" alt="">
+                    </div>
+                    <div class="inputBox">
+                        <span>name on card :</span>
+                        <input type="text" placeholder="name on card" >
+                    </div>
+                    <div class="inputBox">
+                        <span>credit card number :</span>
+                        <input type="number" placeholder="1111-2222-3333-4444">
+                    </div>
+                    <div class="inputBox">
+                        <span>exp month :</span>
+                        <input type="text" placeholder="expir month">
+                    </div>
+    
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>exp year :</span>
+                            <input type="number" placeholder="2022">
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV :</span>
+                            <input type="text" placeholder="1234">
+                        </div>
+                    </div>
+    
+                </div>
+        
+            </div>
+    
+            <input type="submit" value="proceed to checkout" class="submit-btn">
+    
+        </form>
+    
+    </div>    
+    <div class="ticker">
+        <span id="time"></span>    ||    <span id="date"></span>||<span> <a href="https://www.google.com/search?q=aptech%20location%20north%20nazimabad&rlz=1C1GCEU_enPK1006PK1006&ei=MHH2YtemN_SHxc8P1PW3mAQ&oq=aptech+location+north+naz&gs_lcp=Cgdnd3Mtd2l6EAMYADIFCCEQoAEyBQghEKABMgUIIRCgATIFCCEQoAEyCAghEB4QFhAdMggIIRAeEBYQHTIICCEQHhAWEB0yCAghEB4QFhAdMgoIIRAeEA8QFhAdMgoIIRAeEA8QFhAdOgoIABBHELADEMkDOggIABCSAxCwAzoHCAAQRxCwAzoFCAAQkQI6BQgAEIAEOgYIABAeEAc6CAgAEB4QDxAHOgYIABAeEBY6CAgAEB4QDxAWOgUIABCGAzoHCCEQoAEQCjoECCEQFUoECEEYAEoECEYYAFBvWLYgYLgoaAFwAXgBgAGAA4gBhxeSAQcwLjEuOS4ymAEAoAEByAEJwAEB&sclient=gws-wiz&tbs=lf:1,lf_ui:4&tbm=lcl&rflfq=1&num=10&rldimm=6750379321337180458&lqi=Ch9hcHRlY2ggbG9jYXRpb24gbm9ydGggbmF6aW1hYmFkIgOIAQFIsOS14JatgIAIWikQABgAGAIYAyIfYXB0ZWNoIGxvY2F0aW9uIG5vcnRoIG5hemltYWJhZJIBGGNvbXB1dGVyX3RyYWluaW5nX3NjaG9vbKoBLxABGh8QASIb8JDo01n0V6de_0VAqMCXUvj5ymuBDUo2Ud7iKgoiBmFwdGVjaCgA&ved=2ahUKEwjY__XJzsH5AhUIYPEDHWw8A3AQvS56BAgJEAE&sa=X&rlst=f#rlfi=hd:;si:6750379321337180458,l,Ch9hcHRlY2ggbG9jYXRpb24gbm9ydGggbmF6aW1hYmFkIgOIAQFIsOS14JatgIAIWikQABgAGAIYAyIfYXB0ZWNoIGxvY2F0aW9uIG5vcnRoIG5hemltYWJhZJIBGGNvbXB1dGVyX3RyYWluaW5nX3NjaG9vbKoBLxABGh8QASIb8JDo01n0V6de_0VAqMCXUvj5ymuBDUo2Ud7iKgoiBmFwdGVjaCgA;mv:[[25.009037199999998,67.12393229999999],[24.842122,66.99267]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:4" style="color:white; text-decoration: none;"> Aptech NN2</a></span>
+    </div>
+    <div class="but">
+
+        <a href="#" class="to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <a href="#" class="to-cart" id="cart" onclick="check()">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="num"><span id="num"></span></div>
+        </a>
+    </div>
+    <footer class="footer">
+        <h1>2022 - ThriftFashion - All Rights Reserved</h1>
+    </footer>
+
+   
+</body>
+<script >
+  AOS.init();
+        let button = document.getElementById('menu')
+        let close = document.getElementById('close')
+        let links = document.getElementById('links')
+        let opening = document.getElementById('menu')
+        let closing = document.getElementById('times')
+        function link() {
+            links.style.top = "11vh"
+            closing.style.display = "block"
+            opening.style.display = "none"
+        }
+        function active() {
+            links.style.top = "-100%"
+            closing.style.display = "none"
+            opening.style.display = "block"
+        }
+        const toTop = document.querySelector(".to-top");
+        window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 100) {
+            toTop.classList.add("active");
+        } else {
+            toTop.classList.remove("active");
+        }
+        })
+        function home(){
+            location.replace("./Index.html")
+        }
+        function myFunction() {
+
+       
+}
+        let cartButton = document.getElementById("cart")
+        function check(){
+            let contain = document.getElementById("contain")
+            contain.style.transform="scale(1)"
+        }
+        function cros(){
+            let contain = document.getElementById("contain")
+            contain.style.transform="scale(0)"
+        }
+        let num = document.getElementById('num') ;
+        num.innerHTML = 0
+        let buttons1= document.getElementById("add1")
+        let buttons2= document.getElementById("add2")
+        let buttons3= document.getElementById("add3")
+        let buttons4= document.getElementById("add4")
+        let buttons5= document.getElementById("add5")
+        let buttons6= document.getElementById("add6")
+        let buttons7= document.getElementById("add7")
+        let buttons8= document.getElementById("add8")
+        let buttons9= document.getElementById("add9")
+        let buttons10= document.getElementById("add10")
+        let number = 0
+        var today = new Date();
+        var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+        document.getElementById('time').innerHTML = date
+        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        document.getElementById('date').innerHTML = time
+        
+        buttons1.onclick=()=>{
+            number = number + 1
+            num.innerHTML = number
+
+        }
+        buttons2.onclick=()=>{
+            number = number + 1
+            num.innerHTML = number
+
+        }
+        buttons3.onclick=()=>{
+            number = number + 1
+            num.innerHTML = number
+
+        }
+        buttons4.onclick=()=>{
+            number = number + 1
+            num.innerHTML = number
+
+        }
+        buttons5.onclick=()=>{
+            number = number + 1
+            num.innerHTML = number
+
+        }
+        buttons6.onclick=()=>{
+            number = number + 1
+            num.innerHTML = number
+
+        }
+        buttons7.onclick=()=>{
+            number = number + 1
+            num.innerHTML = number
+
+        }
+        buttons8.onclick=()=>{
+            number = number + 1
+            num.innerHTML = number
+
+        }
+        buttons9.onclick=()=>{
+            number = number + 1
+            num.innerHTML = number
+
+        }
+        buttons10.onclick=()=>{
+            number = number + 1
+            num.innerHTML = number
+
+        }
+        
+        $(document).ready(function(){
+            $("#myInput").on("keyup",function(){
+                var value = $(this).val().toLowerCase();
+                $(".row ").filter(function(){
+                        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                })
+            })
+        })
+        document.getElementById('span').innerHTML = localStorage.getItem("name")
+
+</script>
+</html>

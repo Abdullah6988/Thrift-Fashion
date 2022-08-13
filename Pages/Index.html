@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThriftFashion - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./contact.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./About.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section class="animation">
+        <h1>Welcome <span id="span"></span></h1>
+    </section>
+    <section class="header">
+        <nav class="nav">
+            <div class="logo" onclick="home()">
+                <img src="../images/logo_200x200 (1).png" alt="">
+                <h1>Thrift - <span>Fashion</span></h1>
+            </div>
+            <div class="links" id="links">
+                <a href="./Index.html" class="active">Home</a>
+                <a href="product.html">products</a>
+                <a href="#about-wrapper">about us</a>
+                <a href="#contact">contact us</a>
+                <a href="#Feedback">Feedback</a>
+                <a href="#checkout" onclick="check()">checkout</a>
+            </div>
+            <div class="crumb">
+                <button class="bread" onclick="link()"><i class="fa-solid fa-bars" id="menu"></i></button>
+                <button class="close" onclick="active()"><i class="fa-solid fa-xmark" id="times"></i></button>
+            </div>
+            <div class="user">
+                <i class="fa-solid fa-user" data-toggle="popover"  id="user" onmouseover="see()" onmouseout="out()"></i>
+            </div>
+        </nav>
+    </section>
+    <div class="ticker">
+        <span id="time"></span>    ||    <span id="date"></span>  ||<span> <a href="https://www.google.com/search?q=aptech%20location%20north%20nazimabad&rlz=1C1GCEU_enPK1006PK1006&ei=MHH2YtemN_SHxc8P1PW3mAQ&oq=aptech+location+north+naz&gs_lcp=Cgdnd3Mtd2l6EAMYADIFCCEQoAEyBQghEKABMgUIIRCgATIFCCEQoAEyCAghEB4QFhAdMggIIRAeEBYQHTIICCEQHhAWEB0yCAghEB4QFhAdMgoIIRAeEA8QFhAdMgoIIRAeEA8QFhAdOgoIABBHELADEMkDOggIABCSAxCwAzoHCAAQRxCwAzoFCAAQkQI6BQgAEIAEOgYIABAeEAc6CAgAEB4QDxAHOgYIABAeEBY6CAgAEB4QDxAWOgUIABCGAzoHCCEQoAEQCjoECCEQFUoECEEYAEoECEYYAFBvWLYgYLgoaAFwAXgBgAGAA4gBhxeSAQcwLjEuOS4ymAEAoAEByAEJwAEB&sclient=gws-wiz&tbs=lf:1,lf_ui:4&tbm=lcl&rflfq=1&num=10&rldimm=6750379321337180458&lqi=Ch9hcHRlY2ggbG9jYXRpb24gbm9ydGggbmF6aW1hYmFkIgOIAQFIsOS14JatgIAIWikQABgAGAIYAyIfYXB0ZWNoIGxvY2F0aW9uIG5vcnRoIG5hemltYWJhZJIBGGNvbXB1dGVyX3RyYWluaW5nX3NjaG9vbKoBLxABGh8QASIb8JDo01n0V6de_0VAqMCXUvj5ymuBDUo2Ud7iKgoiBmFwdGVjaCgA&ved=2ahUKEwjY__XJzsH5AhUIYPEDHWw8A3AQvS56BAgJEAE&sa=X&rlst=f#rlfi=hd:;si:6750379321337180458,l,Ch9hcHRlY2ggbG9jYXRpb24gbm9ydGggbmF6aW1hYmFkIgOIAQFIsOS14JatgIAIWikQABgAGAIYAyIfYXB0ZWNoIGxvY2F0aW9uIG5vcnRoIG5hemltYWJhZJIBGGNvbXB1dGVyX3RyYWluaW5nX3NjaG9vbKoBLxABGh8QASIb8JDo01n0V6de_0VAqMCXUvj5ymuBDUo2Ud7iKgoiBmFwdGVjaCgA;mv:[[25.009037199999998,67.12393229999999],[24.842122,66.99267]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:4"> Aptech NN2</a></span>
+    </div>
+    <div class="container" id="contain">
+        
+        <form action="">
+    
+            <div class="row">
+    
+                <div class="col">
+    
+                    <h class="title">billing address</h>
+    
+                    <div class="inputBox">
+                        <span>full name :</span>
+                        <input type="text" placeholder="name">
+                    </div>
+                    <div class="inputBox">
+                        <span>email :</span>
+                        <input type="email" placeholder="example@example.com">
+                    </div>
+                    <div class="inputBox">
+                        <span>address :</span>
+                        <input type="text" placeholder="room - street - locality" >
+                    </div>
+                    <div class="inputBox">
+                        <span>city :</span>
+                        <input type="text" placeholder="city" >
+                    </div>
+    
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>state :</span>
+                            <input type="text" placeholder="state" >
+                        </div>
+                        <div class="inputBox">
+                            <span>zip code :</span>
+                            <input type="text" placeholder="123 456" >
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="col">
+                    <div class="cross">
+                        <button id="cross" onclick="cros()"><i class="fa-solid fa-xmark" id="times"></i></button>
+                    </div>
+                    <h3 class="title">payment</h3>
+    
+                    <div class="inputBox">
+                        <span>cards accepted :</span>
+                        <img src="images/card_img.png" alt="">
+                    </div>
+                    <div class="inputBox">
+                        <span>name on card :</span>
+                        <input type="text" placeholder="name on card" >
+                    </div>
+                    <div class="inputBox">
+                        <span>credit card number :</span>
+                        <input type="number" placeholder="1111-2222-3333-4444">
+                    </div>
+                    <div class="inputBox">
+                        <span>exp month :</span>
+                        <input type="text" placeholder="expir month">
+                    </div>
+    
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>exp year :</span>
+                            <input type="number" placeholder="2022">
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV :</span>
+                            <input type="text" placeholder="1234">
+                        </div>
+                    </div>
+    
+                </div>
+        
+            </div>
+    
+            <input type="submit" value="proceed to checkout" class="submit-btn">
+    
+        </form>
+    
+    </div>    
+    <span id="name" ></span>
+    <!-- <div class="mark">
+        <marquee direction="Rights"><span id="date"></span></marquee>
+    </div> -->
+    <section class="products">
+        <div class="img">
+            <img src="../images/2489629.webp" alt="">
+        </div>
+        <div class="content">
+            <h1>Thrift Store</h1>
+            <h3>Enjoy the greatst sale</h3>
+        </div>
+    </section>
+    
+    <div class="main">
+        <div class="col-lg" data-aos="fade-up">
+            <div class="row">
+                <div class="img">
+                    <img src="../images/pr1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2>men fashion</h2>
+                    <a href="./product.html">Shop Now</a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-lg">
+            <div class="row" data-aos="fade-up">
+                <div class="img">
+                    <img src="../images/abcde.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2>women fashion</h2>
+                    <a href="./product.html">Shop Now</a>
+                </div>
+            </div>
+            <div class="row" data-aos="fade-up">
+                <div class="img">
+                    <img src="../images/xyz.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2>kids</h2> fashion</h2>
+                    <a href="./product.html">Shop Now</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg" data-aos="fade-up">
+            <div class="row">
+                <div class="img">
+                    <img src="../images/asa.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2>old fashion</h2>
+                    <a href="./product.html">Shop Now</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="hr"></div>
+    <div class = "about-wrapper" id="about-wrapper">
+        <div class = "about-left">
+          <div class = "about-left-content">
+            <div>
+              <div class = "shadow">
+                <div class = "about-img">
+                  <img src = "../images/logo_200x200 (1).png" alt = "about image">
+                </div>
+              </div>
+  
+              <h2>Thrift<br>Fashion</h2>
+              <h3>Techwiz Aptech</h3>
+            </div>
+  
+            <ul class = "icons">
+              <li><i class = "fab fa-facebook-f"></i></li>
+              <li><i class = "fab fa-twitter"></i></li>
+              <li><i class = "fab fa-linkedin"></i></li>
+              <li><i class = "fab fa-instagram"></i></li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class = "about-right">
+          <h1>hi<span>!</span></h1>
+          <h2>Here's who we are & what we do</h2>
+          <div class = "about-btns">
+            <button type = "button" class = "btn btn-pink"><a href="./product.html"> product</a></button>
+            <button type = "button" class = "btn btn-white"><a href="#contact">contact</a></button>
+          </div>
+  
+          <div class = "about-para">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, aspernatur possimus ullam quaerat, laboriosam ex voluptate aliquid laborum, obcaecati ratione accusamus! Ea nisi modi dolor nam numquam? Temporibus, molestias amet.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus iure tempora alias laudantium sapiente impedit!</p>
+          </div>
+        </div>
+      </div>
+    <div class="hr"></div>
+    <div class="banner" data-aos="fade-up">
+        <img src="../images/banner.jfif" alt="">
+        <div class="content">
+            <h1>Shop the greatest Sale </h1>
+            <h3>Our products are only slightly used and in 10/10 condition. Dont miss thi out. 1be hurry</h3>
+            <br>
+            <a href="product.html">Shop Now</a>
+        </div>
+    </div>
+    <div class="hr"></div>
+    <div class="cards">
+        <div class="col" data-aos="fade-up">
+            <img src="../images/card1.webp" alt="">
+            <div class="content">
+                <h1>low prices</h1>
+                <h3>we work hard to give you the lowest prices every day</h3>
+            </div>
+        </div>
+        <div class="col" data-aos="fade-up">
+            <img src="../images/card2.jpg" alt="">
+            <div class="content">
+                <h1>fast delivery</h1>
+                <h3>our products are delivered on time with costumer satisfaction</h3>
+            </div>
+        </div>
+        <div class="col" data-aos="fade-up">
+            <img src="../images/card3.webp" alt="">
+            <div class="content">
+                <h1>premium quality</h1>
+                <h3>we make sure that you like our products they are truly perfect</h3>
+            </div>
+        </div>
+    </div>
+    <div class="hr"></div>
+    <div class="contact" data-aos="fade-up">
+        <div class="body" id="contact">
+            <div class="contact">
+                <div class="abc">
+                    <div>
+                        <h2>Contact Info</h2>
+                        <ul class="pqr">
+                            <li>
+                                <span><i class="fa-solid fa-location-dot"></i></span>
+                                <span>Aptech - North Nazimabad Campus II</span>
+                            </li>
+                            <li>
+                                <span><i class="fa-solid fa-envelope"></i></span>
+                                <span>babaradbullah698@gmail.com</span>
+                            </li>
+                            <li>
+                                <span><i class="fa-solid fa-phone"></i></span>
+                                <span>0315-8819133</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="fo">
+                        <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                        <li><a href="https://www.linkedin.in/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+                <div class="xyz">
+                    <h2>Send Message</h2>
+                    <form class="form" onsubmit="sen()">
+                        <div class="input w0">
+                            <input type="text" required id="fn">
+                            <span>First Name</span>
+                            <span id="sf"></span>
+                        </div>
+                        <div class="input w0">
+                            <input type="text" required id="ln">
+                            <span>Last Name</span>
+                        </div>
+                        <div class="input w0">
+                            <input type="email" required id="em">
+                            <span>Email Address</span>
+                        </div>
+                        <div class="input w0">
+                            <input type="text" required id="mn">
+                            <span>Mobile Number</span>
+                        </div>
+                        <div class="input w1">
+                            <textarea required></textarea>
+                            <span>Write Your Message Here...</span>
+                        </div>
+                        <div class="input w1">
+                            <input type="submit" value="send" id="snd">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hr"></div>
+    <div id="Feedback">
+        <div class="heading">
+            <h1>Give us your feedback</h1>
+        </div>
+      <div class="emoji">
+        <img src="../images/1.png" alt="" id="emoji">
+      </div>
+      <div class="rating">
+        <i class="fa-solid fa-star" id="rating1" data-toggle="tooltip" title="Worse!"></i>
+        <i class="fa-solid fa-star" id="rating2" data-toggle="tooltip" title="Unsatisfied!"></i>
+        <i class="fa-solid fa-star" id="rating3" data-toggle="tooltip" title="Nothing to say!"></i>
+        <i class="fa-solid fa-star" id="rating4" data-toggle="tooltip" title="Satisfied!"></i>
+        <i class="fa-solid fa-star" id="rating5" data-toggle="tooltip" title="Excellent!"></i>
+      </div>
+      <br>
+      <div class="submit">
+          <input type="submit" id="sub" placeholder="submit">
+      </div>
+    </div>
+    <div class="hr"></div>
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <footer class="footer">
+            <h1>2022 - ThriftFashion - All Rights Reserved</h1>
+    </footer>
+    
+    
+    <script>
+        AOS.init();
+        let button = document.getElementById('menu')
+        let close = document.getElementById('close')
+        let links = document.getElementById('links')
+        let opening = document.getElementById('menu')
+        let closing = document.getElementById('times')
+        function link() {
+            links.style.top = "11vh"
+            closing.style.display = "block"
+            opening.style.display = "none"
+        }
+        function active() {
+            links.style.top = "-100%"
+            closing.style.display = "none"
+            opening.style.display = "block"
+        }
+    
+        const toTop = document.querySelector(".to-top");
+        window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 100) {
+            toTop.classList.add("active");
+        } else {
+            toTop.classList.remove("active");
+        }
+        })
+        // const toCart = document.querySelector(".to-cart");
+        // window.addEventListener("scroll", () => {
+        // if (window.pageYOffset > 100) {
+        //     toCart.classList.add("active");
+        // } else {
+        //     toCart.classList.remove("active");
+        // }
+        // })
+
+        function home(){
+            location.replace("./Index.html")
+        }
+        document.getElementById('span').innerHTML = localStorage.getItem("name");
+        let name =  document.getElementById('name')
+        name.innerHTML = localStorage.getItem("name")
+        function see(){
+            name.style.display="block"
+        }
+        function out(){
+            name.style.display="none"
+            
+        }
+        function check(){
+            let contain = document.getElementById("contain")
+            contain.style.transform="scale(1)"
+        }
+        function cros(){
+            let contain = document.getElementById("contain")
+            contain.style.transform="scale(0)"
+        }
+        
+        let img = document.getElementById('emoji')
+        let rat1 = document.getElementById("rating1")
+        let rat2 = document.getElementById("rating2")
+        let rat3 = document.getElementById("rating3")
+        let rat4 = document.getElementById("rating4")
+        let rat5 = document.getElementById("rating5")
+        let sub = document.getElementById("sub")
+        sub.onclick = () =>{
+            alert("Thanks for you Feedback")
+            rat1.style.color="#e4e4e4"
+            rat2.style.color="#e4e4e4"
+            rat3.style.color="#e4e4e4"
+            rat4.style.color="#e4e4e4"
+            rat5.style.color="#e4e4e4"
+            sub.style.display="none"
+
+        }
+        rat1.onclick = () =>{
+            sub.style.display="block"
+            img.src = "../images/5.png"
+            rat1.style.color="#ffd93b"
+            rat2.style.color="#e4e4e4"
+            rat3.style.color="#e4e4e4"
+            rat4.style.color="#e4e4e4"
+            rat5.style.color="#e4e4e4"
+        }
+        rat2.onclick = () =>{
+            sub.style.display="block"
+            img.src = "../images/4.png"
+            rat1.style.color="#ffd93b"
+            rat2.style.color="#ffd93b"
+            rat3.style.color="#e4e4e4"
+            rat4.style.color="#e4e4e4"
+            rat5.style.color="#e4e4e4"
+        }
+        rat3.onclick = () =>{
+            img.src = "../images/3.png"
+            rat1.style.color="#ffd93b;"
+            rat2.style.color="#ffd93b"
+            rat3.style.color="#ffd93b"
+            rat4.style.color="#e4e4e4"
+            rat5.style.color="#e4e4e4"
+            sub.style.display="block"
+        }
+        rat4.onclick = () =>{
+            img.src = "../images/2.png"
+            rat1.style.color="#ffd93b;"
+            rat2.style.color="#ffd93b"
+            rat3.style.color="#ffd93b"
+            rat4.style.color="#ffd93b"
+            rat5.style.color="#e4e4e4"
+            sub.style.display="block"
+        }
+        rat5.onclick = () =>{
+            img.src = "../images/1.png"
+            rat1.style.color="#ffd93b;"
+            rat2.style.color="#ffd93b"
+            rat3.style.color="#ffd93b"
+            rat4.style.color="#ffd93b"
+            rat5.style.color="#ffd93b"
+            sub.style.display="block"
+        }
+        $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+        });
+        var today = new Date();
+        var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+        document.getElementById('time').innerHTML = date
+        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        document.getElementById('date').innerHTML = time
+        
+    </script>
+</body>
+
+</html>
